@@ -35,7 +35,9 @@
     },
     "web": {
       "favicon": "./assets/favicon.png",
-      "bundler": "metro"
+      "bundler": "metro",
+      "output": "static",
+      "baseUrl": "/Very-Final-DIFM-expogo-app"
     },
     "plugins": [
       "expo-router",

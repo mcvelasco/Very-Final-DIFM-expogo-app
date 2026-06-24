@@ -10,7 +10,9 @@
     "build:android": "eas build --platform android",
     "build:ios": "eas build --platform ios",
     "build:web": "expo export",
-    "build:all": "eas build --platform all"
+    "build:all": "eas build --platform all",
+    "predeploy": "expo export --output-dir dist",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@expo/vector-icons": "^14.0.4",
@@ -39,6 +41,7 @@
   "devDependencies": {
     "@babel/core": "^7.25.0",
     "@types/react": "~18.3.12",
+    "gh-pages": "^6.3.0",
     "typescript": "~5.3.3"
   },
   "private": true
